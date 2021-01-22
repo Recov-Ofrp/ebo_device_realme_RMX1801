@@ -4,7 +4,7 @@
     "target_path": "kernel/realme/sdm660"
   },
   {
-    "repository" : "vendor_realme",
-    "target_path": "vendor/realme"
+    "repository" : "vendor_realme_RMX1801",
+    "target_path": "vendor/realme/RMX1801"
   }
 ]
