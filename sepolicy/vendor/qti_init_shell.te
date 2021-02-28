@@ -1,3 +1,5 @@
 allow qti_init_shell { sysfs_dm sysfs_mmc }:file write;
+allow qti_init_shell vfat:file { read open getattr };
+allow qti_init_shell vfat:dir search;
 
 dontaudit qti_init_shell self:capability { dac_override dac_read_search };
