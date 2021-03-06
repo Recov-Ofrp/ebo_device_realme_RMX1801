@@ -17,6 +17,14 @@ allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_hgain:file { open read getattr write };
 allow system_app sysfs_mgain:file { open read getattr write };
 
+# RealmeParts
+allow system_app proc_touchpanel:dir search;
+allow system_app proc_touchpanel:file { write read open getattr };
+allow system_app sysfs:file { read write open getattr };
+allow system_app sysfs_usb_supply:dir search;
+allow system_app sysfs_usb_supply:file { write read open getattr };
+allow system_app sysfs_fps:file { read open getattr };
+
 # Allow access switches
 allow system_app sysfs_switch:dir search;
 allow system_app sysfs_switch:file rw_file_perms;
