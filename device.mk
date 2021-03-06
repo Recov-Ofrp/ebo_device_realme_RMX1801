@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.devicesetting.rc \
     init.msm.usb.configfs.rc \
     init.oppo.rc \
     init.qcom.early_boot.sh \
@@ -344,6 +345,10 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # Radio
 PRODUCT_PACKAGES += \
