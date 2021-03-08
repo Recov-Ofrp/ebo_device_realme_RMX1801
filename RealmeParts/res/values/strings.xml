@@ -11,13 +11,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="device_title">Realme Settings</string>
-    <string name="device_summary">Adjust Realme specific device settings</string>
+    <string name="device_title">Realme Parts</string>
+    <string name="device_summary">Device Specific Customisations</string>
 
     <!-- Display modes -->
-    <string name="display_title">Display modes</string>
+    <string name="display_title">Display</string>
     <string name="display_color_calibration">Display Color Calibration</string>
-    <string name="set_color_using_kcal">Calibrate Your Display Color Using KCAL</string>
+    <string name="set_color_using_kcal">Calibrate Display Using KCAL</string>
     <string name="cat_colormanagement">Color Settings</string>
     <string name="cat_calibration">Display Calibration</string>
     <string name="kcal_enabled">On</string>
