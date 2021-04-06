@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common evolution stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common bliss stuff
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from Realme RMX1801
@@ -28,7 +28,7 @@ $(call inherit-product, device/realme/RMX1801/device.mk)
 # Set Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-PRODUCT_NAME := evolution_RMX1801
+PRODUCT_NAME := bliss_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo
@@ -46,9 +46,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
 
-#Evolution-X-stuff
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-EVO_MAINTAINER := allworkdone
+#Bliss Build-Type
+BLISS_BUILD_VARIANT=vanilla
+
+#Now Official
+BLISS_BUILDTYPE := OFFICIAL
